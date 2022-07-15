@@ -486,6 +486,8 @@ void HOT WaveshareEPaperTypeA::display() {
 
   // COMMAND MASTER ACTIVATION
   this->command(0x20);
+  // TRY WAITING?
+  this->wait_until_idle_()
   // COMMAND TERMINATE FRAME READ WRITE
   this->command(0xFF);
 
